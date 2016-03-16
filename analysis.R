@@ -98,5 +98,5 @@ analyze <- function() {
         tidy_df <- summarize_each(group_df, funs(mean))
         
         ## Write new table to a file
-        write.table(tidy_df, file = "tidy_dataset.txt")
+        write.table(tidy_df, file = "tidy_dataset.txt", row.names = FALSE)
 }
